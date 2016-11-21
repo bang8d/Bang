@@ -15,9 +15,9 @@ Mathieu Mont.
 
 ## Rev
 
-1.0.0 - First Base
-1.0.1 - Edit README.md
-1.0.2 - Add crud on video management(without methods) , login abilities (ajax + PHP input verification & match), design of admin sidebar, crud on user management(without methods), defined video (film, series, clip). 
+-1.0.0 - First Base
+-1.0.1 - Edit README.md
+-1.0.2 - Add crud on video management(without methods), login abilities (ajax + PHP input verification & match), design of admin sidebar, crud on user management(without methods), defined video (film, series, clip). 
 
 ## Todo 
 
