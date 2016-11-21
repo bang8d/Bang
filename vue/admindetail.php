@@ -6,6 +6,10 @@
  * Heure: 15:37
  */
 ?>
+<link rel="stylesheet" href="/css/admindetail.css" type="text/css" charset="utf-8"/>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.almost-flat.css'>
+</head>
+<body style="padding-left: 60px;">
 <sidebar id="left-menu" class="left-menu">
     <ul class="uk-text-center">
         <li style="width: 60px;">
