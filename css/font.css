@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'basic_title_fontregular';
+    src: url('../font/basictitlefont-webfont.woff2') format('woff2'),
+         url('../font/basictitlefont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+a .font-onizuka{
+    font-size: 48px !important;
+}
+
+.font-onizuka {
+    font-family: 'basic_title_fontregular' !important;
+}
+
+.font-onizuka:hover{
+    color: #EEAEEE !important;
+}
