@@ -1,8 +1,1 @@
-<?php
-//on récupère les informations de connection à la base de donnée
-include 'dbconnect.php';
-//on récupère le numéro de la fonction afin d'éxécuter la bonne requête.
-$numeroFonction = $_POST['nFonction'];
-function verifConnexion(){
-	
-}
+<?php echo "";include 'dbconnect.php';try{    $bdd = new PDO('mysql:host='.$hostBdd.';dbname='.$baseBdd.';charset=utf8', "$userBdd", "$passBdd", array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));} catch(Exception $e){    die($e);}if($_POST['type'] == 'connAdmin'){    $utilisateur = $_POST['utilisateur'];    $passe = $_POST['passe'];    session_start();    $_SESSION['utilisateur'] = $utilisateur;    $requete = $bdd->prepare('SELECT identifiant, pass FROM admin ', array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));    $requete->execute();    while($resultat = $requete->fetch()){        if($utilisateur == $resultat['identifiant']){            if($passe == $resultat['pass']){                echo 'saisie réussite';                $_SESSION['utilisateur'] = $utilisateur;            } else {                echo 'mot de passe incorrect';            }        } else {            echo 'identifiant incorrect';        }    }}

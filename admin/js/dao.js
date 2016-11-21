@@ -1,3 +1,1 @@
-function testConnectionAdmin(){
-	var saisieUtilisateur = document.getElementById('username');
-}
+function testConnectionAdmin(){	console.log('cc');	var saisieUtilisateur = document.getElementById('usernameAdmin').value;	var saisiePasse = document.getElementById('passAdmin').value;	if(saisiePasse == '' && saisieUtilisateur == ''){	} else if(saisiePasse == ''){	} else if(saisieUtilisateur == ''){	} else {		var xhttp = new XMLHttpRequest();		var url = '/dao/admin.php';		var parameters = 'type=cc';		xhttp.onreadystatechange = function () {			if (this.readyState == 4 && this.status == 200) {				document.getElementById('ZoneConfirmation').innerHTML = this.responseText;			} else {			}		};		xhttp.open("POST", url, true);		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");		xhttp.onload = function () {			console.log(this.responseText);		};		xhttp.send(parameters);	}}
