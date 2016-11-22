@@ -16,4 +16,6 @@ if ($pageActuellle == ''){
     include 'vue/admindetail.php';
 } else if($pageActuellle == 'crudVideo'){
     include 'vue/crudvideo.php';
+} else if($pageActuellle == 'crudUser'){
+	include 'vue/cruduser.php';
 }

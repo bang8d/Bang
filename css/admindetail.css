@@ -65,3 +65,42 @@
     color : #fff;
     background-color: #5DB9F7;
 }
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #ddd;
+    color: #ddd;
+    text-decoration: none;
+    margin: 0px 10px 10px 0;
+    transition: all .6s;
+    min-width: 100px;
+    text-align: center
+}
+.btn:hover {
+    background: #ddd;
+    color: #fff;
+}
+/* Medium Size */
+.btn.md{
+    padding: 20px 40px
+}
+/* Big Size */
+.btn.lg{
+    padding: 24px 48px;
+}
+/* Border Radius */
+.btn.style-1{
+    border-radius: 10px;
+}
+.btn.style-2{
+    border-radius: 40px;
+}
+
+/* Color 1 #16A085 */
+.btn.color-1 {border-color: #16A085;color: #16A085;}
+.btn.color-1:hover {background: #16A085;color: #fff;}
+
+/* Color 2 #27AE60 */
+.btn.color-2 {border-color: #27AE60;color: #27AE60;}
+.btn.color-2:hover {background: #27AE60;color: #fff;}
